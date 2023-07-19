@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 94%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: hsl(0, 1%, 44%);
+    font-family: "Poppins", sans-serif;
+}
+
+.card {
+    padding: 50px;
+    background-color: white;
+    height: 650px;
+    width: 800px;
+    border-radius: 30px 30px 25% ;
+}
+
+form {
+    display: flex;
+}
+
+form div {
+    margin-right: 30px;
+}
+
+label {
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 14px;
+    display: block;
+}
+
+input {
+    height: 70px;
+    width: 170px;
+    border: 1px solid hsl(0, 0%, 86%);
+    padding: 0 20px;
+    font-size: 32px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+input::placeholder {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:active, input:focus {
+    outline: none;
+    border: 1px solid hsl(259, 100%, 65%);
+}
+
+.date-error {
+    color: hsl(0, 100%, 67%);
+}
+
+i {
+    display: block;
+    z-index: -1;
+    position: relative;
+    margin-top: 10px;
+    color: hsl(0, 100%, 67%);
+    font-size: 14px;
+    transform: translateY(-50px);
+    transition: .2s;
+}
+
+.error {
+    transform: translateY(0px);
+    z-index: 0;
+}
+
+.line {
+    position: relative;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 1px solid hsl(0, 0%, 86%);
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(259, 100%, 65%);
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.logo:hover {
+    background: hsl(0, 0%, 8%);
+}
+
+.result {
+    font-size: 100px;
+    color: hsl(0, 0%, 8%);
+    font-weight: 800;
+    font-style: italic;
+    line-height: 1;
+}
+
+.result span {
+    color: hsl(259, 100%, 65%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: fixed;
+    height: 40px;
+    bottom: -50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

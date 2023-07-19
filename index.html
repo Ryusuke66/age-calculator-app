@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+  <div class="card">
+    <form id="main-form" method="post" novalidate onsubmit="return false">
+      <div>
+        <label>Day</label>
+        <input type="number" name="day" placeholder="DD">
+        <i></i>
+      </div>
+      <div>
+        <label>Month</label>
+        <input type="number" name="month" placeholder="MM">
+        <i></i>
+      </div>
+      <div>
+        <label>Year</label>
+        <input type="number" name="year" placeholder="YYYY">
+        <i></i>
+      </div>
+    </form>
+    <div class="line">
+      <hr>
+      <button class="logo" form="main-form">
+        <img src="assets/images/icon-arrow.svg" alt="">
+      </button>
+    </div>
+    <div class="result"><span>- -</span>years</div>
+    <div class="result"><span>- -</span>months</div>
+    <div class="result"><span>- -</span>days</div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
