@@ -19,11 +19,13 @@ body {
     background-color: white;
     height: 650px;
     width: 800px;
+    max-width: 95%;
     border-radius: 30px 30px 25% ;
 }
 
 form {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
 }
 
 form div {
@@ -41,7 +43,7 @@ label {
 
 input {
     height: 70px;
-    width: 170px;
+    max-width: 100%;
     border: 1px solid hsl(0, 0%, 86%);
     padding: 0 20px;
     font-size: 32px;
@@ -131,7 +133,6 @@ hr {
 }
 
 .attribution { 
-    font-size: 11px; 
     text-align: center; 
     position: fixed;
     height: 40px;
@@ -140,8 +141,62 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
+    transition: .4s;
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: hsl(259, 100%, 65%); 
+}
+
+body:hover .attribution, .attribution:hover {
+    bottom: 0;
+}
+
+@media (max-width: 830px) {
+
+    .card {
+        height: 500px;
+        padding: 50px 25px;
+    }
+
+    form div {
+        margin-right: 15px;
+    }
+
+    label {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    input {
+        height: 50px;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+    input::placeholder {
+        font-size: 22px;
+    }
+
+    .line {
+        justify-content: center;
+    }
+
+    .logo {
+        width: 65px;
+        height: 65px;
+    }
+
+    .logo img {
+        width: 28px;
+    }
+
+    .result {
+        font-size: 54px;
+    }
+
+    .attribution { 
+        display: none;
+    }
 }
